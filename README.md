@@ -1,18 +1,26 @@
 java c
-Digital Signal Processing and Digital Filters 
-Practice Sheet 07
-1)    The Direct Form. I and Direct   Form. II   of digital   filters   are   depicted   in   the   diagrams   below.
-Let   the   input   initial   conditions   be   x[0]   =   −1   and   x[1]   =   2.   Find   y0   ,   y1   ,   t0   ,   t1    such   that,   if   yI [i] = yII [i] = yi and t   [i] = ti,   i = 0, 1,    then the two forms are equivalent, i.e.,   yI [n]   =   yII    [n] ,   ∀n   ∈   Z.
-2)    Let   y [n]   be   the   output   of a   linear   system   as   depicted   below
-
-(a)    Convert   the   block   diagram   into   代 写Digital Signal Processing and Digital Filters Practice Sheet 07Python
-代做程序编程语言an   equivalent   transposed   form,
-(b)    Derive the transfer   function   of the   original block   diagram   and   compute the   values   of   b [i] ,   i   =   0, 1, 2   and   a   [i] ,   i   =   0, 1   from   its   Direct   Form   I/II   representation   as   shown in   the   diagram   of   Question   1.
-3)    Let   a   linear   system   be   described   by
-
-(a)    Calculate   the   zeros   and   poles   of the   system.
-(b)      Write   the   system   as   the   product   of two   biquads   such   that   ensure   a   low   peak   gain.
-
+Fall 2024 Econ 5140: 
+Problem Set #1 : Simple Dynamic General Equilibrium 
+Model and Solow Growth Model 
+Due Wednesday, Sept.  25rd, 2024Q1: Download  China’s  annual real  GDP  (usually from  1952) and quarterly real GDP data (usually available from 1992) and use the a computer command to apply HP ﬁler to the data and show the trend component and cyclical component. What do you ﬁnd from the data?  (You can use command from other software as well.  )
+For example:
+Eview command:  (for annual data, λ = 100)%  Example  Eview   code   for   hp=filter  ,   gdp   hp   is   the   trended   component ;
+Select   all
+gdp . hpf ( lambda=1600)   gdp   hp
+series   gdp   c  =  gdp       gdp   hpQ2: Question 2 from Chapter 4 of the GLS  (intermediate macro textbook I sent earlier) textbook. You can download data following the link provided in GSL text- book.Q3: Consider the two-period endowment economy (with no uncertainty) we discuss in class.  But now we assume there are two types of households,  1 and 2.  Let us assume that there are L1  and L2  households of each type.  Also, assume that Type 1 agents receive Yt1  = 1 and Yt = 0.  So they are natural saver.  Type 2 agents are natural borrower,  receiving  Yt2   =  0  and Yt =  1.   Also,  these two types  of households have identical preference.
+a) Derive the consumption function of Type 1 and 2.
+b) What is the equilibrium interest rate in this case?  (Hint, you need to consider goods market equilibrium).
+c) What is the equilibrium consumption for Type 1 and 2 households at period t and t + 1.  Are they same or diferent from those in the model we study in class?
+Why?
+d) Please explain if the distribution of endowment afect the equilibrium interest rate. Why?
+Q4: Consider a two period economy with production, where consumers have utility given by
+U(C1 , C2 ) = ln C1 + η ln(1 - H1 ) + β[ln C2 + η ln(1 - H2 )]             (0.1)
+The consumer’s budget constrain is given by
+C1 + K2     =   W1 H1 + R1 K1C2     =   W2 H2 + R2 K2                                                     (0.2)
+where W is the wage rate, R is the gross capital rental rate, H is the labor supply and K is the investment.This says that in the ﬁrst period, the consumer consumes and invests and earns wages from working and rents from renting her capital to the ﬁrm.  In the second period, the consumer consumes all wages and rents.  Since all consumers are alike we can think of the one consumer as representing ‘the whole economy’ .a). The consumers will choose consumption, investment and labor supply in period 1 and 2 to maximize her utility, taking wage and rental rate as given. Describe the conditions that characterize the consumers’ optimal choice.b). Explain the intuition of the intertemporal optimality condition (the Euler equa- tion) and the intratemporal optimality condition (the equation that relates the labor supply, wage and consumption).c).    Assume  that  the  ﬁrms  are  perfectly  competitive.    What代 写Econ 5140: Problem Set #1 : Simple Dynamic General Equilibrium Fall 2024Matlab
+代做程序编程语言  will  be  the  com- petitive wage  and return to capital in each period,  if the production function is Y = ΘKα L1-α  in each period?d).  Now use the results from a and b to compute the equilibrium value of employ- ment and ﬁrst period investment for the economy.  Does employment depend on the productivity term Θ?  Can you explain?Q5: Take the Solow growth model with exogenous saving rate s, population growth rate n, depreciation rate δ, and rate of labor augmenting technical progress g.  In addition, assume that the production function is of the Cobb-Douglas form.	Y = Kα (AL)1-α                                                                      (0.3)a). Assume that factors of production are paid their marginal product. What is the expression for the wage and the return to capital, in terms of the intensive form. of the production function?
+b).  Show that along the stead state, the return to capital will be constant, but the wage will be growing. At what rate will the wage grow?c).  Assume that the economy start of below the steady state capital per efective labor. Show that the rate of return to capital will be falling over time, but the wage will be growing at a faster rate than in the steady state.
+d). Compute the saving rate that is necessary so that the steady state of the economy is below the golden rule level for the capital per efective labor.e).   Assume  now  that there  is  a  government which  spends  a  fraction  z of GDP in every year, so that the government spending is zY.  Using the national income identity Y = C + I + G to work out the new rule for capital accumulation in the Solow model.   How will  government spending  afect the long run growth rate of output per capita and the steady state level of GDP?Q6: Read Section 1.6 of Romer, answer the following question.  Suppose there are two economies a and b,  let y˜a   =  L(Y)a(a)  and  ˜(y)b   =  L(Y)b(b) .   Suppose  that  the  production function in both economies are Cobb-Douglas, i.e., Y = Kα (AL)1-α .  Also suppose that the market is competitive and the marginal product of capital is equal to the rate of return to capital. a).  If    = 10 and suppose the technology level  (Aa  = Ab ) is the same across two economies, what is the implied diference of rate of return in economy a and b? Is the observed diference in rate of return on capital reasonable? Why?b). Now suppose that  = 10 still holds, but these two economies have diferenttechnology level (Aa  Ab ). Usually the observed rate of return on capital between poor countries and rich countries is 3 - 4 times, assume that this is the diference in rate of return on capital between country a and b, i.e.,  = 4, what is the implied diference in technology in these two economies?(Do not need to hand in.)Q7: Using the facts of growth and explain in what aspects the Solow growth model provides a theory of growth which is consistent with the data, and in what aspects it is not so successful.
 
 
 
